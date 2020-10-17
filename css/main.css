@@ -1,0 +1,52 @@
+:root {
+	--brand-name-color: #fff;
+	--nav-color: rgba(255,255,255,.55);
+  --main-bg-color: #362525;
+  --main-bg-color2: #c5a983;
+}
+
+body {
+	background-color: var(--main-bg-color2);
+}
+
+.navbar-dark {
+	background-color: var(--main-bg-color);
+}
+
+.footer {
+	background-color: var(--main-bg-color2);
+	color: var(--nav-color);
+}
+.iconbar-footer {
+	background-color: var(--main-bg-color);
+	color: var(--nav-color);
+	width: 100%;
+}
+.copyright-footer{
+
+}
+font-mitral{
+	font-family: mitral;
+}
+/*
+.navbar-toggler {
+	margin-left:auto;
+	flex-direction: row-reverse;
+	padding: 0 important!;
+}
+*/
+
+/*
+@media screen and (min-width: 576px) {
+	.footer {
+		display: flex;
+  	align-items: center;
+  	justify-content: center;
+		margin:auto;
+		width:100%;
+	}
+	.footer li{
+		margin: 1rem;
+	}
+}
+*/
