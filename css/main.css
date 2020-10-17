@@ -16,6 +16,7 @@ body {
 .footer {
 	background-color: var(--main-bg-color2);
 	color: var(--nav-color);
+	bottom:0;
 }
 .iconbar-footer {
 	background-color: var(--main-bg-color);
