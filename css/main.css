@@ -22,9 +22,7 @@ body {
 	color: var(--nav-color);
 	width: 100%;
 }
-.copyright-footer{
 
-}
 font-mitral{
 	font-family: mitral;
 }
@@ -35,11 +33,14 @@ font-mitral{
 	padding: 0 important!;
 }
 */
-
+hr-menu {
+	color: currentColor;
+}
 
 @media screen and (max-width: 576px) {
 
 .visibility{
 	visibility:hidden;
 }
+
 }
