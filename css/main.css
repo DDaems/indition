@@ -4,6 +4,11 @@
   --main-bg-color: #362525;
   --main-bg-color2: #c5a983;
 }
+@font-face {
+  font-family: 'mitral';
+	src: url('../font/mistral-webfont.ttf') format('truetype');
+
+}
 
 body {
 	background-color: var(--main-bg-color2);
@@ -11,6 +16,10 @@ body {
 	height: 100%;
 	display:flex;
   flex-direction:column;
+}
+
+.brand-name {
+	font-family: mitral;
 }
 
 .navbar-dark {
