@@ -10,7 +10,6 @@ window.onload = function () {
 		console.log("Do not allow tracking!");
 		window['ga-disable-UA-43965515-3'] = true;
 	} else {
-		console.log("ELSE FIRED")
 		//ga('create', 'UA-43965515-3', 'indition.be');
 		ga('create', 'UA-43965515-3', {
 			'cookieDomain': 'none'
