@@ -1,13 +1,13 @@
 
-  h1,h2 {
+#evelien h1, h2 {
       margin: 1rem;
   }
   
-  h3{
+  #evelien  h3{
       text-align: center;
       margin-bottom: 2rem;
   }
-  p{
+  #evelien  p{
       margin:2rem;
   }
   .telefoon {
@@ -16,7 +16,7 @@
       margin: 1rem 0 6rem 0;
   }
  
-#about img{
+#about_img img{
     margin-left:2rem;
     margin-bottom: 2rem;
     margin-top:2rem;
@@ -24,22 +24,22 @@
     height: 300px;
     object-fit: cover;      
 }
-#contact .row{
+#evelien .row{
     margin-top: 3rem;
 }
-ul{
+#evelien ul{
     list-style-type: none;
 }
 .bedrijf ul{
     text-align: center;
 }
-li{
-    padding-bottom: 1rem;
+#evelien li{
+  padding-bottom: 1rem;
 }
-form {
+#evelien form {
     margin: 2rem;
 }
-#contact .form {
+#evelien .form {
     margin-top: 10rem;
     margin-bottom: 5rem;
 }
