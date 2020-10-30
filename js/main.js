@@ -23,7 +23,7 @@ window.onload = function () {
 }
 
 function stuurEmail() {
-	console.log("email send");
+	alert("bericht verzonden");
 }
 
 function optOutAnalytics() {
