@@ -1,7 +1,10 @@
 #Indition
 
 ***Een project voor de module werkveld exploratie***
+
 2de jaar programmeren @Thomasmore
+
+[Live versie](https://ddaems.be/eduweb/)
 
 door:
 - Dieter Daems
