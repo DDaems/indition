@@ -119,14 +119,14 @@
             </div>
 
             <div class="col-sm-6">
-                <p class="telefoon">
+							<a href="tel:+3214300065" class="telefoon">
                   <span style="font-size: 0.75em;">
                   <svg style="vertical-align:baseline" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
                   </svg>
                 </span>
                   014 30 00 65
-                </p>
+								</a>
             </div>
         </div>
         <div class="row">
@@ -150,17 +150,15 @@
             <div class="col-sm-6">
                 <h2>
                     Contact
-                </h2>
-                <form id="contactform" action="mailto:info@w3docs.com" method="get" enctype="text/plain">
-                    <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp"
-                        placeholder="Naam">
-                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
-                        placeholder="Email">
-                    <textarea rows="4" cols="60" name="message"
-                        form="contactform">Hoe kunnen wij u helpen?</textarea><br>
-                    <input type="checkbox" id="gdpr" name="gdpr" value="gdprYes">
-                    <label for="gdpr"> Ik ga akkoord met de privacy policy</label><br>
-                    <input type="submit" value="Verstuur">
+								</h2>
+								<!-- action="mailto:info@w3docs.com"-->
+                <form id="contactform" onsubmit="stuurEmail();return false;">
+                    <input type="text" class="form-control" id="InputName" aria-label="naam" placeholder="Naam" required>
+                    <input type="email" class="form-control" id="InputEmail" aria-label="email adres" placeholder="Email" required>
+                    <textarea aria-label="bericht" rows="4" cols="60" name="message" placeholder="Hoe kunnen wij u helpen?" required></textarea><br>
+                    <input type="checkbox" id="gdpr" name="gdpr" value="gdprYes" required>
+                    <label for="gdpr"> Ik ga akkoord met de <a href="gdpr/privacybeleid.html" target="_blank">privacy policy</a></label><br>
+                    <input type="submit" class="btn btn-dark" aria-label="Verzenden" value="Verzenden"></button>
                 </form>
             </div>
             <div class="col-sm-6">
@@ -169,8 +167,8 @@
         </div>
         <div class="row">
             <div class="col bedrijf">
-                <ul>
-                    <li>Kapsalon Indition</li>
+                <ul aria-labelledby="Bedrijfs gegevens">
+                    <li>Kapsalon <span class="brandname">Indition</span></li>
                     <li>Veldstraat 32, 2450 Meerhout</li>
                     <li>BTW BE 0123.456.789</li>
                 </ul>
