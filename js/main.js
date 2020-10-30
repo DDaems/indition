@@ -1,3 +1,5 @@
+const ga_code = 'G-N91727FTKN'; //'UA-43965515-3';
+
 window.onload = function () {
 	let jaargang = new Date().getFullYear();
 	(jaargang > 2020)
@@ -7,19 +9,26 @@ window.onload = function () {
 		cookieConsent();
 	}
 	else if (getCookie('allowTracking') == 'false') {
-		console.log("Do not allow tracking!");
-		window['ga-disable-UA-43965515-3'] = true;
-	} else {
-		//ga('create', 'UA-43965515-3', 'indition.be');
-		ga('create', 'UA-43965515-3', {
-			'cookieDomain': 'none'
-		});
 
+		ga('create', ga_code, 'auto');
+		ga('send', 'pageview');
+
+		optOutAnalytics();
+	} else {
+
+		ga('create', ga_code, 'auto');
 		ga('send', 'pageview');
 	}
 
 }
 
+function stuurEmail() {
+	console.log("email send");
+}
+
+function optOutAnalytics() {
+	window['ga-disable-' + ga_code] = true; //Opt-out google analytics tracking
+}
 
 function setCookie(name, value, days) {
 	var expires = "";
@@ -51,7 +60,7 @@ function cookieConsent() {
 }
 
 $('#btnDeny').click(() => {
-	window['ga-disable-UA-43965515-3'] = true; //Opt-out google analytics tracking
+	optOutAnalytics();
 
 	setCookie('allowTracking', 'false', 7)
 	$('.toast').toast('hide')
@@ -60,10 +69,7 @@ $('#btnDeny').click(() => {
 $('#btnAccept').click(() => {
 	setCookie('allowTracking', 'true', 7)
 
-	// ga('create', 'UA-43965515-3', 'indition.be');
-	ga('create', 'UA-43965515-3', {
-		'cookieDomain': 'none'
-	});
+	ga('create', ga_code, 'auto');
 	ga('send', 'pageview');
 
 	$('.toast').toast('hide')

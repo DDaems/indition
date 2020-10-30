@@ -2,7 +2,8 @@
 	--brand-name-color: #fff;
 	--nav-color: rgba(255,255,255,.55);
   --main-bg-color: #362525;
-  --main-bg-color2: #c5a983;
+	--main-bg-color2: #c5a983;
+	--link-color: #257ede;
 }
 @font-face {
   font-family: 'mitral';
@@ -17,7 +18,9 @@ body {
 	display:flex;
   flex-direction:column;
 }
-
+a {
+	color: var(--link-color);
+}
 .brand-name {
 	font-family: mitral;
 }
@@ -45,6 +48,19 @@ font-mitral{
 header~div {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+}
+
+.uitschrijvenGA{
+color: red;
+}
+
+.uitschrijvenGA:visited{
+ color:green;
+}
+
+.brandname {
+ font-weight: 700;
+ font-size: 1.2rem;
 }
 
 @media screen and (max-width: 576px) {
