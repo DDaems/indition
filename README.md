@@ -10,3 +10,8 @@ door:
 
 
 Voor  details over het project bekijk onze [Analyse](analyse%20indition.docx).
+
+
+
+**Copyright 2020**
+Dieter Daems, Nisse Sterckx, Evelien Verbeeck
