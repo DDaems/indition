@@ -37,6 +37,7 @@
 }
 .bedrijf ul{
     text-align: center;
+    padding-inline-start: 0px;
 }
 #evelien li{
   padding-bottom: 1rem;
