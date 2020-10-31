@@ -1,4 +1,4 @@
-const ga_code = 'G-N91727FTKN'; //'UA-43965515-3';
+const ga_code = 'G-N91727FTKN'; //Indition: 'UA-43965515-3';
 
 window.onload = function () {
 	let jaargang = new Date().getFullYear();
@@ -10,14 +10,14 @@ window.onload = function () {
 	}
 	else if (getCookie('allowTracking') == 'false') {
 
-		ga('create', ga_code, 'auto');
-		ga('send', 'pageview');
+		gtag('js', new Date());
+		gtag('config', ga_code);
 
 		optOutAnalytics();
 	} else {
 
-		ga('create', ga_code, 'auto');
-		ga('send', 'pageview');
+		gtag('js', new Date());
+		gtag('config', ga_code);
 	}
 
 }
@@ -27,7 +27,7 @@ function stuurEmail() {
 }
 
 function optOutAnalytics() {
-	window['ga-disable-' + ga_code] = true; //Opt-out google analytics tracking
+	window['ga-disable-' + ga_code] = true;
 }
 
 function setCookie(name, value, days) {
@@ -69,8 +69,8 @@ $('#btnDeny').click(() => {
 $('#btnAccept').click(() => {
 	setCookie('allowTracking', 'true', 7)
 
-	ga('create', ga_code, 'auto');
-	ga('send', 'pageview');
+	gtag('js', new Date());
+	gtag('config', ga_code);
 
 	$('.toast').toast('hide')
 })
