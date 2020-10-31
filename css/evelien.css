@@ -1,74 +1,85 @@
+#evelien h1,
+h2 {
+    margin: 1rem;
+}
 
-#evelien h1, h2 {
-      margin: 1rem;
-  }
-
-  #evelien  h3{
-      text-align: center;
-      margin-bottom: 2rem;
-  }
-  #evelien  p{
-      margin:2rem;
-  }
-  .telefoon {
-      font-size: 2em;
-      text-align: right;
-			margin: 1rem 0 6rem 0;
-			color: #362525;
-	}
-	.telefoon:hover{
-		color: #6d6161;
-    text-decoration: none;
-	}
-
-#about_img img{
-    margin-left:2rem;
+#evelien h3 {
+    text-align: center;
     margin-bottom: 2rem;
-    margin-top:2rem;
+}
+
+#evelien p {
+    margin: 2rem;
+}
+
+.telefoon {
+    font-size: 2em;
+    text-align: right;
+    margin: 1rem 0 6rem 0;
+    color: #362525;
+}
+
+.telefoon:hover {
+    color: #6d6161;
+    text-decoration: none;
+}
+
+#about_img img {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
-#evelien .row{
+
+#evelien .row {
     margin-top: 3rem;
 }
-#evelien ul{
+
+#evelien ul {
     list-style-type: none;
 }
-.bedrijf ul{
+
+.bedrijf ul {
     text-align: center;
     padding-inline-start: 0px;
 }
-#evelien li{
-  padding-bottom: 1rem;
+
+#evelien li {
+    padding-bottom: 1rem;
 }
+
 #evelien form {
     margin: 2rem;
 }
+
 #evelien .form {
     margin-top: 10rem;
     margin-bottom: 5rem;
 }
-#evelien .form-control, textarea{
+
+#evelien .form-control,
+textarea {
     margin-top: 2rem;
     border-radius: 0;
-    padding:.375rem .75rem;
-    width:100%;
+    padding: .375rem .75rem;
+    width: 100%;
     color: #495057;
     border: 1px solid #ced4da
 }
 
-#evelien textarea:focus{
+#evelien textarea:focus {
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
 
 #map {
     height: 400px;
     /* The height is 400 pixels */
     width: 100%;
-		/* The width is the width of the web page */
+    /* The width is the width of the web page */
 }

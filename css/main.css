@@ -1,100 +1,97 @@
 :root {
-	--brand-name-color: #fff;
-	--nav-color: rgba(255,255,255,.55);
-  --main-bg-color: #362525;
-	--main-bg-color2: #c5a983;
-	--link-color: #257ede;
+    --brand-name-color: #fff;
+    --nav-color: rgba(255, 255, 255, .55);
+    --main-bg-color: #362525;
+    --main-bg-color2: #c5a983;
+    --link-color: #257ede;
 }
-@font-face {
-  font-family: 'mitral';
-	src: url('../font/mistral-webfont.ttf') format('truetype');
 
+@font-face {
+    font-family: 'mitral';
+    src: url('../font/mistral-webfont.ttf') format('truetype');
 }
 
 body {
-	background-color: var(--main-bg-color2);
-	min-height: 100vh;
-	height: 100%;
-	display:flex;
-  flex-direction:column;
+    background-color: var(--main-bg-color2);
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 a {
-	color: var(--link-color);
+    color: var(--link-color);
 }
+
 .brand-name {
-	font-family: mitral;
+    font-family: mitral;
 }
 
 .navbar-dark {
-	background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color);
 }
 
 .footer {
-	background-color: var(--main-bg-color2);
-	color: var(--nav-color);
-	width: 100%;
-	margin-top:auto;
+    background-color: var(--main-bg-color2);
+    color: var(--nav-color);
+    width: 100%;
+    margin-top: auto;
 }
 
 .iconbar-footer {
-	background-color: var(--main-bg-color);
-	width: 100%;
+    background-color: var(--main-bg-color);
+    width: 100%;
 }
 
-font-mitral{
-	font-family: mitral;
+font-mitral {
+    font-family: mitral;
 }
 
 header~div {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.uitschrijvenGA{
-color: red;
+.uitschrijvenGA {
+    color: red;
 }
 
-.uitschrijvenGA:visited{
- color:green;
+.uitschrijvenGA:visited {
+    color: green;
 }
 
 .brandname {
- font-weight: 700;
- font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 576px) {
-
-.visibility{
-	visibility:hidden;
-}
-.navbar-nav {
-	padding-left:40px;
-}
-
+    .visibility {
+        visibility: hidden;
+    }
+    .navbar-nav {
+        padding-left: 40px;
+    }
 }
 
 @media screen and (max-width: 384px) {
-	.iconbar-footer {
-	padding-left: 0;
-	padding-right: 0;
-	}
+    .iconbar-footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
-
 
 @media screen and (max-width: 360px) {
-	.iconbar-footer {
-		font-size: 0.8rem;
-	padding-left: 0;
-	padding-right: 0;
-	}
+    .iconbar-footer {
+        font-size: 0.8rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
-
 @media screen and (max-width: 768px) and (min-width: 670px) {
-	#bdNavbar > ul > li {
-	padding-left: 0;
-	padding-right: 0;
-	}
-
+    #bdNavbar>ul>li {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
